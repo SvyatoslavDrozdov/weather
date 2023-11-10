@@ -60,5 +60,3 @@ while True:
         history.append(weather_information)
 
     print("\n")
-
-a =  2 +    3
