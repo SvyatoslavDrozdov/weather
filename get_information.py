@@ -17,12 +17,12 @@ def get_weather(city) -> list:
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     information = [
-        f'Current time: {current_time}',
-        f'City name: {city}',
-        f'Weather: {weather["weather"][0]["description"]}',
-        f'Current temperature: {weather["main"]["temp"]} degrees Celsius',
-        f'Feels like: {weather["main"]["feels_like"]} degrees Celsius',
-        f'Wind speed: {weather["wind"]["speed"]} m/s'
+        f"Current time: {current_time}",
+        f"City name: {city}",
+        f"Weather: {weather["weather"][0]["description"]}",
+        f"Current temperature: {weather["main"]["temp"]} degrees Celsius",
+        f"Feels like: {weather["main"]["feels_like"]} degrees Celsius",
+        f"Wind speed: {weather["wind"]["speed"]} m/s"
     ]
     return information
 
