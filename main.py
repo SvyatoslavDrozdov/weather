@@ -24,6 +24,8 @@ while True:
             weather_information = get_weather(city)
         except KeyError:
             print("City not found.")
+        except TypeError:
+            print("City not found.")
 
     elif choice == "2":
         city = get_current_city()
