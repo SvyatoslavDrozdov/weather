@@ -22,8 +22,6 @@ while True:
         city = input().strip()
         try:
             weather_information = get_weather(city)
-        except KeyError:
-            print("City not found.")
         except TypeError:
             print("City not found.")
 
