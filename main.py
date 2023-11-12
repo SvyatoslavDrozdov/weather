@@ -40,6 +40,8 @@ while True:
                     for i in range(0, 5):
                         print(history[n][i])
                     print("-------------------------------------------")
+                if number_of_requests < 0:
+                    print("Incorrect number.")
             except ValueError:
                 print("Incorrect number.")
         else:
