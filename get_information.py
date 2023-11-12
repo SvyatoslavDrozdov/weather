@@ -1,6 +1,6 @@
 import requests
 import geocoder
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from weather.config import key, url
 
 
@@ -14,7 +14,9 @@ def get_weather(city) -> list:
     params = {'APPID': key, 'q': city, 'units': 'metric'}
     result = requests.get(url, params=params)
     weather = result.json()
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    time_shift = weather.get("timezone")
+    time_zone = timezone(timedelta(seconds=time_shift))
+    current_time = datetime.now(time_zone).strftime("%Y-%m-%d %H:%M:%S")
 
     information = [
         f"Current time: {current_time}",
@@ -24,6 +26,7 @@ def get_weather(city) -> list:
         f"Feels like: {weather["main"]["feels_like"]} degrees Celsius",
         f"Wind speed: {weather["wind"]["speed"]} m/s"
     ]
+
     return information
 
 
