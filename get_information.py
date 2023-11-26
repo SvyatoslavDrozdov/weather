@@ -18,7 +18,6 @@ def get_weather(city) -> list:
     current_time = weather.get("dt")
     time_zone = timezone(timedelta(seconds=time_shift))
     current_time = datetime.fromtimestamp(current_time)
-    print(weather)
     if str(time_zone) == "UTC":
         time_zone = "UTC+00:00"
 
