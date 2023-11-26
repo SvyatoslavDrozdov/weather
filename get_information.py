@@ -17,9 +17,11 @@ def get_weather(city) -> list:
     time_shift = weather.get("timezone")
     time_zone = timezone(timedelta(seconds=time_shift))
     current_time = datetime.now(time_zone).strftime("%Y-%m-%d %H:%M:%S")
+    if str(time_zone) == "UTC":
+        time_zone = "UTC+00:00"
 
     information = [
-        f"Current time: {current_time}",
+        f"Current time: {current_time + " " + str(time_zone)}",
         f"City name: {city}",
         f"Weather: {weather["weather"][0]["description"]}",
         f"Current temperature: {weather["main"]["temp"]} degrees Celsius",

@@ -1,4 +1,4 @@
-from weather.get_information import get_weather, get_current_city
+from get_information import get_weather, get_current_city
 
 history_data_file = open("history.txt", mode="a+")
 
@@ -58,9 +58,10 @@ while True:
         if history:
             print("How many recent requests to display?")
             try:
+                history_len = len(history)
                 number_of_requests = int(input())
-                number_of_requests = min(number_of_requests, len(history))
-                for n in range(0, number_of_requests):
+                number_of_requests = min(number_of_requests, history_len)
+                for n in range(history_len - 1, history_len - number_of_requests - 1, -1):
                     print(f"---------------Request № {n + 1}-----------------")
                     for i in range(0, 5):
                         print(history[n][i])
