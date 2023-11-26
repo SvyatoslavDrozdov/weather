@@ -15,13 +15,15 @@ def get_weather(city) -> list:
     result = requests.get(url, params=params)
     weather = result.json()
     time_shift = weather.get("timezone")
+    current_time = weather.get("dt")
     time_zone = timezone(timedelta(seconds=time_shift))
-    current_time = datetime.now(time_zone).strftime("%Y-%m-%d %H:%M:%S")
+    current_time = datetime.fromtimestamp(current_time)
+    print(weather)
     if str(time_zone) == "UTC":
         time_zone = "UTC+00:00"
 
     information = [
-        f"Current time: {current_time + " " + str(time_zone)}",
+        f"Current time: {str(current_time) + " " + str(time_zone)}",
         f"City name: {city}",
         f"Weather: {weather["weather"][0]["description"]}",
         f"Current temperature: {weather["main"]["temp"]} degrees Celsius",

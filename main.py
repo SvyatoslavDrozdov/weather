@@ -85,7 +85,7 @@ while True:
 
     if weather_information:
         print("-------------------------------------------")
-        for i in range(0, 5):
+        for i in range(0, 6):
             print(weather_information[i])
         print("-------------------------------------------")
         history.append(weather_information)
