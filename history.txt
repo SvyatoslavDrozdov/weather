@@ -1,0 +1,56 @@
+
+Current time: 2023-12-04 19:51:44 UTC+03:00
+City name: Saint Petersburg
+Weather: mist
+Current temperature: -6.99 degrees Celsius
+Feels like: -11.9 degrees Celsius
+Wind speed: 3 m/s
+
+Current time: 2023-12-04 22:51:44 UTC+03:00
+City name: Saint Petersburg
+Weather: mist
+Current temperature: -6.99 degrees Celsius
+Feels like: -11.9 degrees Celsius
+Wind speed: 3 m/s
+
+Current time: 2023-12-04 19:51:44 UTC+03:00
+City name: Saint Petersburg
+Weather: mist
+Current temperature: -6.99 degrees Celsius
+Feels like: -11.9 degrees Celsius
+Wind speed: 3 m/s
+
+Current time: 2023-12-04 19:51:39 UTC+00:00
+City name: London
+Weather: light rain
+Current temperature: 6.42 degrees Celsius
+Feels like: 3.05 degrees Celsius
+Wind speed: 5.14 m/s
+
+Current time: 2023-12-04 19:51:39 UTC+00:00
+City name: London
+Weather: light rain
+Current temperature: 6.42 degrees Celsius
+Feels like: 3.05 degrees Celsius
+Wind speed: 5.14 m/s
+
+Current time: 2023-12-04 22:51:44 UTC+03:00
+City name: Saint Petersburg
+Weather: mist
+Current temperature: -6.99 degrees Celsius
+Feels like: -11.9 degrees Celsius
+Wind speed: 3 m/s
+
+Current time: 2023-12-04 19:51:44 UTC+03:00
+City name: Saint Petersburg
+Weather: mist
+Current temperature: -6.99 degrees Celsius
+Feels like: -11.9 degrees Celsius
+Wind speed: 3 m/s
+
+Current time: 2023-12-04 16:51:39 UTC+00:00
+City name: London
+Weather: light rain
+Current temperature: 6.42 degrees Celsius
+Feels like: 3.05 degrees Celsius
+Wind speed: 5.14 m/s

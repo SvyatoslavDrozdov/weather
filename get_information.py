@@ -1,7 +1,7 @@
 import requests
 import geocoder
 from datetime import datetime, timezone, timedelta
-from config import key, url, my_time_zone
+from config import key, url
 
 
 def get_weather(city) -> list:
@@ -17,7 +17,8 @@ def get_weather(city) -> list:
     time_shift = weather.get("timezone")
     current_time = weather.get("dt")
     time_zone = timezone(timedelta(seconds=time_shift))
-    current_time = datetime.fromtimestamp(current_time - my_time_zone + time_shift)
+    current_time = datetime.fromtimestamp(current_time, time_zone)
+
     if str(time_zone) == "UTC":
         time_zone = "UTC+00:00"
 
